@@ -26,30 +26,6 @@ public class Board {
         return board;
     }
 
-    public void displayBoard()
-    {
-        for(int row=0;row<board.size();row++) {
-
-
-            for (int column = 0; column < board.getFirst().size(); column++) {
-
-                System.out.print("|");
-                Player currentPlayerInCell = board.get(row).get(column).getPlayer();
-                if(currentPlayerInCell!=null)
-                {
-                    System.out.print(currentPlayerInCell.symbol);
-                }
-                else
-                {
-                    System.out.print("-");
-                }
-
-
-
-            }
-            System.out.print("|\n");
-        }
-    }
 
     public void serBoard(List<List<Cell>> board)
     {
