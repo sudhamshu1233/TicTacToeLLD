@@ -1,7 +1,4 @@
 package Models;
-
-import projectenums.cellstatus;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,8 +24,4 @@ public class Board {
     }
 
 
-    public void serBoard(List<List<Cell>> board)
-    {
-        this.board = board;
-    }
 }
